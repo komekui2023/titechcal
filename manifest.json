@@ -1,0 +1,31 @@
+{
+	"manifest_version" : 2,
+	"name" : "T2SCHOLA時間割",
+	"version" : "2.0.6",
+	"description": "T2SCHOLAの講義ページへのリンクを時間割形式で表示します",
+	"permissions": [
+		"storage",
+		"declarativeNetRequest",
+		"https://portal.nap.gsic.titech.ac.jp/*",
+		"https://kyomu2.gakumu.titech.ac.jp/*",
+		"https://t2schola.titech.ac.jp/*"
+	],
+	"icons": {
+		"256": "icon.png"
+	},
+	"browser_action": {
+		"default_popup": "popup/index.htm"
+	},
+	"background": {
+		"scripts": ["background.js"]
+	},
+	"declarative_net_request" : {
+		"rule_resources": [
+			{
+				"id": "ruleset_1",
+				"enabled": true,
+				"path": "rule.json"
+			}
+		]
+	}
+}

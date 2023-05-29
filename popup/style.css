@@ -1,0 +1,99 @@
+body{
+	margin: 0;
+}
+
+iframe{
+	border-style: none;
+	width: 500px;
+	height: 80px;
+	vertical-align: top;
+	overflow: hidden;
+}
+
+.wrap{
+	width: 500px;
+}
+
+iframe + .wrap{
+	margin-top: -12px;
+}
+
+.header{
+	position: relative;
+	background: #779bc8;
+	color: #ffffff;
+	font-size: 12px;
+	height: 30px;
+}
+
+.header p{
+	line-height: 30px;
+}
+
+.header a.quarter{
+	background: #dbe3e7;
+	border-radius: 2px;
+	padding: 2px;
+	margin: 0 0 0 2px;
+	text-decoration: none;
+	color: #000;
+}
+
+.header a.quarter.now{
+	background: #A7D3E3;
+}
+
+.header a#reflesh{
+	display: block;
+	position: absolute;
+	top: 2px;
+	right: 2px;
+	width: 24px;
+	height: 24px;
+	border: 1px solid #779bc8;
+	border-radius: 12px;
+	background: #ffffff url('reflesh.png') 4px 4px no-repeat;
+}
+
+.header a#reflesh:hover{
+	background-color: #85c7df !important;
+}
+
+table{
+	margin: 0;
+	padding: 0;
+	width: 500px;
+	table-layout: fixed;
+	border-collapse: collapse;
+	background: #fff;
+}
+
+th{
+	font-size: 12px;
+	width: 40px;
+	background: #dbe3e7;
+}
+
+td{
+	height: 74px;
+	max-width: 0;
+	vertical-align: top;
+}
+
+td span{
+	display: block;
+	height: calc(100% - 8px);
+	background: #dbe3e7;
+	border-radius: 8px;
+	padding: 4px;
+	font-size: 12px;
+}
+
+td span.t2{
+	background: #A7D3E3;
+}
+
+td a{
+	text-decoration: none;
+	color: #000;
+}
